@@ -1,0 +1,15 @@
+numpy
+scipy
+matplotlib
+pandas
+seaborn
+statsmodels
+pandas-datareader
+requests
+tqdm
+tabulate
+
+pytorch
+tensorboard
+
+gymnasium

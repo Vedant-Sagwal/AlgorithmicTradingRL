@@ -5,8 +5,8 @@ import pandas as pd
 import os
 
 #constants
-START_DATE = ""
-END_DATE = ""
+START_DATE = "2017-1-1"
+END_DATE = "2020-12-31"
 INTERVAL = "1d"
 DATA_DIR = "./data"
 

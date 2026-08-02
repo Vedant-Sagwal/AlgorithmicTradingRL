@@ -204,9 +204,6 @@ class TradingEnv(gym.Env):
         self.data.at[index, 'Money'] = money
         self.data.at[index, 'Returns'] = (money - prev_money) / prev_money if prev_money else 0.0
     def calculate_reward_signal(self, reward_clip=REWARD_CLIP):
-        """
-        Calculates the reward for the current step. In the paper they use the %returns.
-        """
         reward = self.cell(self.current_step, 'Returns')
         return np.clip(reward, -reward_clip, reward_clip)
     def calc_sharpe_reward_signal(self, risk_free_rate =RISK_FREE_RATE, trading_periods_per_year = TRADING_DAYS_YEAR,reward_clip =REWARD_CLIP):

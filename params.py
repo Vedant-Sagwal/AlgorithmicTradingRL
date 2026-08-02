@@ -37,7 +37,7 @@ CAPITAL = 100000
 TRADE_COSTS_PERCENT = 10 / 100 / 100  # 10 basis points costs
 
 # Hyperparameters
-#BATCH_SIZE = 8 * strategy.num_replicas_in_sync
+BATCH_SIZE = 64
 LEARN_RATE = 1e-3           # The networks learning rate (min 1e-5)
 TRAIN_EPISODES = 500        # Number of episodes to train the networks (max 1000)
 COLLECT_SIZE = 1000         # Default memory buffer, should default to observation state size
